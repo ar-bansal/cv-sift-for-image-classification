@@ -1,9 +1,11 @@
 data
 mlflow_data
 
-src.egg-info
+*.egg-info
 **/__pycache__
 .env
 
 temp*
 test*
+
+ssh*
