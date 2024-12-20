@@ -13,15 +13,17 @@ Using scale-invariant feature transform (SIFT) to classify images of playing car
 3. **Classification**: Standard scaler + SVM with RBF kernel.  
 
 ## Results  
-- Best models  
+### Best Models  
+
 | SVM Kernel  | SVM C | SVM Degree | Training Accuracy | Validation Accuracy |
 |-------------|-------|------------|-------------------|---------------------|
 | rbf*        | 1.0   | -          | 81.59             | 72.69               |
 | poly        | 1.0   | 3          | 84.63             | 67.31               |
 
-The starred model was selected as the best performing model. For that model, grid search was used with poly and rbf kernels. 
+The starred model was selected as the best performing model. For that model, grid search was used with poly and rbf kernels.
 
-- Training confusion matrix for the best model 
+### Training Confusion Matrix for the Best Model  
+
 |               | True Clubs | True Diamonds | True Hearts | True Spades |  
 |---------------|------------|---------------|-------------|-------------|  
 | Pred Clubs    | 1478       | 54            | 99          | 164         |
@@ -29,8 +31,8 @@ The starred model was selected as the best performing model. For that model, gri
 | Pred Hearts   | 130        | 123           | 1460        | 138         |
 | Pred Spades   | 138        | 87            | 103         | 1414        |
 
+### Validation Confusion Matrix for the Best Model  
 
-- Validation confusion matrix for the best model
 |               | True Clubs | True Diamonds | True Hearts | True Spades |  
 |---------------|------------|---------------|-------------|-------------|  
 | Pred Clubs    | 56         | 2             | 4           | 13          |
